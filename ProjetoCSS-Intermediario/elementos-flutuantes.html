@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Elementos flutuantes</title>
+        <style>
+
+            #principal{
+                border: 5px solid red;
+                background-color: green;
+            }
+
+            .conteudo{
+                background: blue;
+                border: 1px solid gray;
+                width: 150px;
+                height: 150px;
+                float: left;
+                margin-right: 10px;
+            }
+
+            /*.conteudo1{
+                background: red;
+                border: 1px solid gray;
+                width: 150px;
+                height: 150px;
+                float: right;
+            }*/
+
+            .conteudo-zero{
+                background: red;
+                border: 1px solid gray;
+                width: 200;
+                height: 200;
+                margin: 10px;
+ 
+            }
+
+            .clear{
+               clear: both; 
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="principal">
+            <div class="conteudo">
+                Conteudo 1
+            </div>
+
+            <div class="conteudo">
+                Conteudo 2
+            </div>
+
+            <div class="conteudo">
+                Conteudo 3
+            </div>
+
+            <div class="clear"></div> <!--Div usada pra aplicar
+                                     o clear dentro da id principal
+                                    O Float não deixaria o backgrond 
+                                    aparecer normalmente-->
+        </div>
+
+    </body>
+
+</html>

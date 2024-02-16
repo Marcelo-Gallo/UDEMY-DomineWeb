@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Posicionamentos (static, relative, absolute e fixed)</title>
+        <style type="text/css">
+            /*static é o fluxo padrão padrão*/
+            /*relative é relativo ao alinhamento inicial do elemento*/
+            /*absolute é posicionado com base no container que tenha um posicionamento diferente de static e ele também é removido do fluxo padrão do documento*/
+            /*fixed é fixo na tela, mesmo que você role a pagina. Em outras palavras, ele é fixo em relação a janela do navegador*/
+            body{
+                background: #007fc7;
+            }
+            #container{
+                background: #FFF;
+                width: 800px;
+                margin: 10px auto;
+                padding: 10px;
+                position: relative;
+            }
+
+            p{
+                width: 300px;
+            }
+
+            .relative{
+                border: 1px solid red;
+                position: relative;
+                /*top, right, bottom, left*/
+                /*Pode haver valores negativos para inverter o deslocamento*/
+                top: 0px;
+                left: 0px;
+            }
+
+            .absolute{
+                border: 1px solid red;
+                background: #f2f2f2;
+                position: absolute;
+                top: 80px;
+                right: 80px;
+            }
+
+            .fixed{
+                border: 1px solid red;
+                background: #f2f2f2;
+                margin: 0px; /*tira a margem superior padrão do <p>, fazendo ficar na extremidade da janela do navegador*/
+                position: fixed;
+                right: 0px;
+                bottom: 0px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <div id="container">
+            <h1>Posicionamentos</h1>
+            <p>P1 Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+                Fusce nec orci in sem tempor luctus.
+                Donec ut metus interdum, consequat orci eget,
+                interdum nibh.
+            </p>
+
+            <p class="fixed">P2 Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+                Fusce nec orci in sem tempor luctus.
+                Donec ut metus interdum, consequat orci eget,
+                interdum nibh.
+            </p>
+
+            <p>P3 Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+                Fusce nec orci in sem tempor luctus.
+                Donec ut metus interdum, consequat orci eget,
+                interdum nibh.
+            </p>
+            <p>P3 Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+                Fusce nec orci in sem tempor luctus.
+                Donec ut metus interdum, consequat orci eget,
+                interdum nibh.
+            </p>
+            <p>P3 Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+                Fusce nec orci in sem tempor luctus.
+                Donec ut metus interdum, consequat orci eget,
+                interdum nibh.
+            </p>
+            <p>P3 Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+                Fusce nec orci in sem tempor luctus.
+                Donec ut metus interdum, consequat orci eget,
+                interdum nibh.
+            </p>
+            <p>P3 Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+                Fusce nec orci in sem tempor luctus.
+                Donec ut metus interdum, consequat orci eget,
+                interdum nibh.
+            </p>
+            <p>P3 Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+                Fusce nec orci in sem tempor luctus.
+                Donec ut metus interdum, consequat orci eget,
+                interdum nibh.
+            </p>
+            <p>P3 Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+                Fusce nec orci in sem tempor luctus.
+                Donec ut metus interdum, consequat orci eget,
+                interdum nibh.
+            </p>
+            <p>P3 Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+                Fusce nec orci in sem tempor luctus.
+                Donec ut metus interdum, consequat orci eget,
+                interdum nibh.
+            </p>
+
+        </div>
+
+    </body>
+
+</html>

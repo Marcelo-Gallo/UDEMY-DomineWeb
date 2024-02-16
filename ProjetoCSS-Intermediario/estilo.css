@@ -1,0 +1,47 @@
+/*
+Modelo de caixa
+
+
+.conteudo{
+    O modo de colocar os valores aparentemente
+    se mantem igual para todo tipo estilização
+
+    border: 1px solid red;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    
+
+    padding: 20px 15px 10px 5px;
+    padding: 20px 5px;
+    padding: 20px;
+
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin: 10px;
+
+    width: 150px;
+}
+
+.conteudo2{
+    margin: 50px;
+    width: 150px;
+    border: 1px solid red;
+}
+Margin collapse aqui encima, logo a margemn maior 
+será a utilizada na estilização
+*/
+
+#noticia{
+    background: #f9f9f9;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+/*h2 por padrão já possui magem*/
+h2{
+    margin: 0px;
+}
