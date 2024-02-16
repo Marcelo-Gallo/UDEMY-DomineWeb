@@ -1,0 +1,66 @@
+/*Seletor universal
+Seletor que seleciona todos os elementos no documento
+
+*{
+  border: 1px solid red;
+}
+
+***********************************
+Seletor de texto
+Seleciona elementos pelo tipo
+Exemplo de seletor para o H1
+h1{
+    color: purple;
+}
+
+***********************************
+Seletor de classe
+Seleciona um elemento cujo atributo
+class tem o valor especificado depois do ponto
+Exemplo:
+p.verde{
+    Aplica o seletor verde apenas nos paragrafos, como se fosse uma restrição
+    color: green;
+}
+
+***********************************
+Seletor de ID
+Exemplo:
+#cabecalho{
+    border: 1px solid blue;
+}
+
+***********************************
+Seletor de filho
+Seleciona elemento que é filho direto de outro:
+Se aplica a todos os elementos
+li>a{
+    Seleciona os links (<a>) que são filhos de li's (list item)
+    color: red;
+    text-decoration: none;
+}
+
+***********************************
+Seletor de descendente:
+Seleciona um elemento que pe descendente de outro, não precisando ser um filho direto
+um filho direto também é descendente, mas um descendente não necessáriamente é um filho direto
+
+li a{
+    color: brown;
+}
+
+***********************************
+Seletor de filho adjacente:
+Seleciona um elemento que é o irmão proximo de outro elemento:
+h1+p{
+    color: red;
+}
+
+***********************************
+Seletor de irmão geral:
+Seleciona um elemento que é irmão de outro, nao precisando ser diretamente precedente:
+*/
+h1~p{
+    color:red;
+}
+
