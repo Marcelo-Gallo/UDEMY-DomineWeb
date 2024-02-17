@@ -59,8 +59,10 @@ h1+p{
 ***********************************
 Seletor de irmão geral:
 Seleciona um elemento que é irmão de outro, nao precisando ser diretamente precedente:
-*/
 h1~p{
     color:red;
 }
+*/
+
+
 
