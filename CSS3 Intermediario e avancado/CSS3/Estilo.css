@@ -62,7 +62,34 @@ Seleciona um elemento que é irmão de outro, nao precisando ser diretamente pre
 h1~p{
     color:red;
 }
+
+*****************HERANÇA******************
+Como há herança, o ideal é definir formatações genericas para as tags mais externas
+border e background não são herdados
+se eu usar o seletor geral, ele aplica em todas as tags
+*{
+    border: 1px solid blueviolet;
+}
+
+body{
+    color: red;
+}
+
+*****************Especificidade******************
+No caso de dois seletores iguais, o ultimo será o aplicado.
+!important define prioridade, mas o aconselhavel é resolver sem usa-lo
+p{
+    color: blue !important;
+}
+
+p{
+    color: red;
+}
+
+Agora, se um seletor for mais especifico que outro, a regra mais especifica será aplicada.
 */
 
-
+*{
+    color: red;
+}
 
