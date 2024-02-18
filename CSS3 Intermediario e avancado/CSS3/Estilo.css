@@ -1,4 +1,5 @@
-/*Seletor universal
+/*OBS: "descomente" a parte que deseja testar
+Seletor universal
 Seletor que seleciona todos os elementos no documento
 
 *{
@@ -87,9 +88,21 @@ p{
 }
 
 Agora, se um seletor for mais especifico que outro, a regra mais especifica será aplicada.
-*/
-
+Deixei em ordem de especificidade, mas não precisa estar em ordem.
+geral<tag<class<id
 *{
     color: red;
 }
 
+h2{
+    color: blue;
+}
+
+h2.verde{
+    color: green;
+}
+
+h2#amarelo{
+    color: yellow;
+}
+*/
