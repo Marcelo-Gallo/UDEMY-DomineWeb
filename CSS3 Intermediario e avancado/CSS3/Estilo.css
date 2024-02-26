@@ -118,8 +118,8 @@ li{
     padding:5px 20px;
     background: url("../Imagens/seta.png") no-repeat left center;
 }
-*/
 
+Aqui começa o desing final:
 ul{
     margin: 0;
     padding: 0;
@@ -127,7 +127,6 @@ ul{
 }
 
 ul a{
-    /*border: 1px solid red;*/
     width: 200px;
     height: 40px;
     display: block;
@@ -152,4 +151,44 @@ a:hover, .selecionado a{
     background-position: right bottom;
     background-color: #f99200;
     color: #fff;
+}
+*/
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+    background: #159cb0 url("../Imagens/fundo-horizontal.png") repeat-x;
+    float: left;
+}
+
+ul li{
+    float: left;
+}
+
+ul a{
+    display: block;
+    padding: 0 2em;
+    line-height: 2.2em;
+    text-decoration: none;
+    color: #fff;
+    background: url(../Imagens/divisor.png) repeat-y left top;
+}
+
+ul .primeiro a{
+background: none;
+}
+
+ul a:hover{
+    color: #085662;
+    background: #44cade;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contatos #navegacao .contatos a{
+    color: #085662;
+    background: #44cade;
 }
