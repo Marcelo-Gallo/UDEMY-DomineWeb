@@ -152,7 +152,7 @@ a:hover, .selecionado a{
     background-color: #f99200;
     color: #fff;
 }
-*/
+
 ul{
     margin: 0;
     padding: 0;
@@ -191,4 +191,42 @@ ul a:hover{
 #contatos #navegacao .contatos a{
     color: #085662;
     background: #44cade;
+}
+*/
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+}
+
+ul li{
+    float: left;
+    background: url(../Imagens/aba-direita.png) no-repeat top right;
+}
+
+li a{
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url(../Imagens/aba-esquerda.png) no-repeat top left;
+    color: #fff;
+}
+
+ul a:hover{
+    color:#894a1f;
+}
+
+ul #atual{
+    background: url(../Imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+ul #atual a{
+    background: url(../Imagens/aba-esquerda-atual.png) no-repeat top left;
 }
