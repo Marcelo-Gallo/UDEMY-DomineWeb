@@ -1,4 +1,4 @@
-/*Layouts*/
+/*Layouts
 
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -6,12 +6,12 @@ body{
 }
 
 #container{
-    width: 85%;/*720px*/
+    width: 960px; 85% -> liquido, em px é solido
     margin: 0 auto;
-    background: #fff;
+    background: #fff url(../Imagens/coluna.png) repeat-y left top;
     min-width: 820px;
-    /*max-width*/
-    /*existe max/min height também*/
+    max-width
+    existe max/min height também
 }
 
 #marca{
@@ -20,30 +20,30 @@ body{
     text-align: center;
     line-height: 200px;
 }
-/*
+
 #imagem{
     width: 90%;
     overflow: hidden;
-}*/
+
 
 #conteudo{
-    width: 75%; /*520px -> 74.28%*/
+    width: 75%; 520px -> 74.28%
     float: right;
 }
 
 #conteudo-principal{
-    width: 63%; /*320px*/
+    width: 63%; 320px
     float: left;
 }
 
 img.img-noticia{
     width: 94%;
     padding: 2%;
-    max-width: 600px; /*tamanho da imagem, evita que prejudique a visualização*/
+    max-width: 600px; tamanho da imagem, evita que prejudique a visualização
 }
 
 #conteudo-secundario{
-    width: 34%;/*180px*/
+    width: 34%;180px
     float: right;
     background: #d1d1d1;
 }
@@ -57,11 +57,10 @@ img.img-noticia{
 }
 
 #navegacao{
-    width: 23%; /*180px ->25.71%*/
+    width: 23%; 180px ->25.71%
     float: left;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #d1d1d1;
 }
 
 #navegacao ul{
@@ -76,4 +75,40 @@ img.img-noticia{
     clear: both;
     background: #c4c4c4;
     padding: 5px;
+}
+
+Estilizando tabelas:
+*/
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+table{
+    width: 600px;
+}
+
+th, td{
+    padding: 7px;
+}
+
+th{
+    text-transform: uppercase;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left;
+    font-size: 90%;
+    letter-spacing: 0.1em;
+}
+
+tr.alternado{
+    background-color: #efefef;
+}
+
+tr:hover{
+    background-color: #c3e6e5;
+}
+
+.numero{
+    text-align: right;
 }
