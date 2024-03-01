@@ -150,7 +150,6 @@ input.radio, input.checkbox, input.submit{
     margin-right: 1em;
 }
 Estilizando Formularios 2
-*/
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: #643d87 url(../Imagens/fundo.jpg) no-repeat top center;
@@ -209,6 +208,44 @@ input.submit{
     background: linear-gradient(to bottom, #faa600, #f68a00);
 }
 
-input.submit:hover{ /*Só pra reconhecer como botão*/
+input.submit:hover{ Só pra reconhecer como botão
     cursor: pointer;
+}
+
+Arredondamento com imagens:
+.caixa{
+    width: 400px;
+    background: #dedede url(../Imagens/topo2.png) no-repeat left top;
+}
+
+.caixa h2{
+    padding: 10px 20px 0 20px;
+}
+
+.caixa p{
+    background: url(../Imagens/baixo2.png) no-repeat left bottom;
+    padding: 0 20px 20px 20px;
+}
+*/
+
+.caixa{
+    width: 400px;
+    background: #dedede url(../Imagens/fundo-arredondamento.png) repeat-y;
+
+}
+
+.caixa h2{
+    padding: 10px 20px 0 20px;
+    background: url(../Imagens/topo2.png) no-repeat left top;
+}
+
+.caixa p{
+    padding: 0 20px;
+    margin-bottom: 0;
+}
+
+.caixa .ultimo{
+    background: url(../Imagens/baixo2.png) no-repeat left bottom;
+    width: 400px;
+    height: 24px;
 }
