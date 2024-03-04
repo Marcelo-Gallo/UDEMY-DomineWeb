@@ -1,0 +1,1 @@
+Assim como o projeto noticias cidade, este não é focado em sua funcionalida e sim estilização, sendo privado de linkagem e paginas funcionais.
