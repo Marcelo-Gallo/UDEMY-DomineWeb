@@ -1,0 +1,1 @@
+Este estudo de caso teve como finalidade colocar em pratica as estilizações CSS do modulo, em um projeto funcional seria dada maior atenção a linkagem de paginas e até mesmo a estilização da linkagem;
