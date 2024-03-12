@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flexbox - Flexible Box Layout</title>
+        
+        <style type="text/css">
+            
+            #conteudo{
+                background: #dcdcdc;
+                height: 600px;
+                display: flex;
+
+                /*Os primeiros são os padões, valendo para todos*/
+                /*Valores da propriedade flex-direction
+                | row | row-reverse | column | column-reverse |
+                --> rege como os itens serão dispostos no container*/
+
+                flex-direction: row;
+
+                /*Valores da propriedade flex-wrap
+                | nowrap | wrap | wrap-reverse |
+                --> faz a quebra pra manter o tamanho dos itens
+                --> é responsivo ao tamanho da tela*/
+
+                flex-wrap: nowrap;
+
+                /*Valores da propriedade justify-content
+                | flex-start | flex-end | center | space-between | space-around |
+                para horizontal*/
+
+                justify-content: space-around;
+
+                /*Valores da propriedade align-itens
+                | stretch | center | flex-start | flex-edn | baseline |
+                para vertical*/
+
+                align-items: center;
+
+            }
+
+            .item{
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+                background: white;
+                border: 1px solid gray;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Flexbox</h1>
+        <div id="conteudo">
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+            <div class="item">04</div>
+        </div>
+
+    </body>
+
+</html>
