@@ -17,7 +17,7 @@ var cronometro = setInterval(function() {
     if(tempo < 0){
         clearInterval(cronometro) //para cronometro
         clearInterval(criaMosquito) //para criação de moscas
-        document.location.href = ''
+        document.location.href = 'vitoria.html'
     } else {
         document.getElementById('cronometro').innerHTML = tempo
     }
