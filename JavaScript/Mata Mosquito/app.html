@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mata Mosquito</title>
-    <link rel="stylesheet" href="estilo.css">
-    <script src="jogo.js"></script>
-</head>
-<body onresize="ajustaTamanhoPalcoJogo()">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mata Mosquito</title>
+        <link rel="stylesheet" href="estilo.css">
+        <script src="jogo.js"></script>
+    </head>
+    <body onresize="ajustaTamanhoPalcoJogo()">
 
-    <div class="painel">
-        <div class="vidas">
-            <img id="v1" src="Imagens/coracao_cheio.png">
-            <img id="v2" src="Imagens/coracao_cheio.png">
-            <img id="v3" src="Imagens/coracao_cheio.png">
+        <div class="painel">
+            <div class="vidas">
+                <img id="v1" src="Imagens/coracao_cheio.png">
+                <img id="v2" src="Imagens/coracao_cheio.png">
+                <img id="v3" src="Imagens/coracao_cheio.png">
+            </div>
+            <div class="cronometro">
+                Tempo restane: <span id="cronometro"></span>
+            </div>
         </div>
-        <div class="cronometro">
-            Tempo restane: <span id="cronometro"></span>
-        </div>
-    </div>
 
-    <script>
-        //crio aqui o primeiro digito do cronometro, note que o id 'cronometro ja foi criado no momento de leitura destas linhas, então após um segundo o valor atualizado já substituirá o valor inicial'
-        document.getElementById('cronometro').innerHTML = tempo
+        <script>
+            //crio aqui o primeiro digito do cronometro, note que o id 'cronometro ja foi criado no momento de leitura destas linhas, então após um segundo o valor atualizado já substituirá o valor inicial'
+            document.getElementById('cronometro').innerHTML = tempo
 
-        var criaMosquito = setInterval(function() {
-            posicaoRandomica()
-        }, 2000)
-    </script>
+            var criaMosquito = setInterval(function() {
+                posicaoRandomica()
+            }, 2000)
+        </script>
 
-</body>
+    </body>
 </html>
