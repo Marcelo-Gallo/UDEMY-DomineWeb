@@ -16,14 +16,17 @@
             <img id="v3" src="Imagens/coracao_cheio.png">
         </div>
         <div class="cronometro">
-            Tempo restane: 
+            Tempo restane: <span id="cronometro"></span>
         </div>
     </div>
 
     <script>
-        setInterval(function() {
+        //crio aqui o primeiro digito do cronometro, note que o id 'cronometro ja foi criado no momento de leitura destas linhas, então após um segundo o valor atualizado já substituirá o valor inicial'
+        document.getElementById('cronometro').innerHTML = tempo
+
+        var criaMosquito = setInterval(function() {
             posicaoRandomica()
-        }, 1000)
+        }, 2000)
     </script>
 
 </body>
